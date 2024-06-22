@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Blur Filter",
+  "version": "1.0",
+  "description": "An extension that removes the CSS blur filter from any website.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon.svg"
+  }
+}
